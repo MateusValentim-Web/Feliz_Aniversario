@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Aniversário!</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <h1>Desde que você entrou na minha vida, tudo ficou mais bonito. <br> Feliz aniversário, meu amor!</h1>
+
+  <div id="confetti"></div>
+  <div id="heartClickEffect"></div>
+
+  <div class="love-counter">
+    <p id="counter"></p>
+  </div>
+
+  <button id="kiss-button">Dar um beijo ❤️</button>
+  <p id="kiss-counter">Beijos dados: 0</p>
+
+  <div class="heart" style="left: 20%; animation-delay: 0s;"></div>
+  <div class="heart" style="left: 40%; animation-delay: 1s;"></div>
+  <div class="heart" style="left: 60%; animation-delay: 2s;"></div>
+  <div class="heart" style="left: 80%; animation-delay: 3s;"></div>
+  <div class="heart" style="left: 30%; animation-delay: 4s;"></div>
+
+  <div class="gallery">
+    <img src="./fotos/WhatsApp Image 2025-05-05 at 15.58.48 (1).jpeg" alt="Foto 1" onclick="openFull(this)">
+    <img src="./fotos/WhatsApp Image 2025-05-05 at 15.58.48 (2).jpeg" alt="Foto 2" onclick="openFull(this)">
+    <img src="./fotos/WhatsApp Image 2025-05-05 at 15.58.48.jpeg" alt="Foto 3" onclick="openFull(this)">
+    <img src="./fotos/WhatsApp Image 2025-05-05 at 15.58.49.jpeg" alt="Foto 4" onclick="openFull(this)">
+  </div>
+
+  <div class="video-container">
+    <video controls>
+      <source src="./fotos/WhatsApp Video 2025-05-05 at 15.58.48.mp4" type="video/mp4">
+      Seu navegador não suporta o formato de vídeo.
+    </video>
+  </div>
+
+  <div id="quiz-container">
+    <h1>Quiz: O quanto você me conhece?</h1>
+    <div id="question-container">
+      <p id="question">Qual foi o nosso primeiro encontro?</p>
+      <button class="answer-btn" data-answer="A">No cinema 🎬</button>
+      <button class="answer-btn" data-answer="B">Jantando juntos em um restaurante 🍽</button>
+      <button class="answer-btn" data-answer="C">Um encontro improvisado no parque 🌳</button>
+    </div>
+  </div>
+
+  <div id="result-container" style="display: none;">
+    <h2>Resultado</h2>
+    <p id="result-message">Você me conhece muito bem! 💖</p>
+    <p id="score-message">Sua pontuação: 0 de 7</p>
+  </div>
+
+  <div id="fullImgContainer" onclick="closeFull()">
+    <img id="fullImg" src="">
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

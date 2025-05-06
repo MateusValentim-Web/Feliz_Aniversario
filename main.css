@@ -218,8 +218,12 @@ h1 {
 }
 
 #kiss-button:focus {
-    outline: none;
-    box-shadow: none;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#kiss-button {
+    -webkit-tap-highlight-color: transparent; /* Remove o efeito de highlight do toque */
 }
 
 

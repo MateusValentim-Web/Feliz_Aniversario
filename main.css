@@ -217,6 +217,12 @@ h1 {
     transform: scale(1.1);
 }
 
+#kiss-button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
 #kiss-counter {
     font-size: 2rem;
     margin-top: 20px;
